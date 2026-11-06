@@ -1,0 +1,31 @@
+/* System Absoluto LLC — estilos base */
+*, *::before, *::after { box-sizing: border-box; }
+html { scroll-behavior: smooth; -webkit-text-size-adjust: 100%; }
+body { margin: 0; background: #F5F3EE; }
+img { max-width: 100%; }
+a { color: #0E1B2C; }
+a:hover { color: #0070CC; }
+h1, h2, h3 { font-family: 'Sora', system-ui, sans-serif; }
+section[id], form[id] { scroll-margin-top: 16px; }
+:focus-visible { outline: 3px solid #0091FF; outline-offset: 3px; }
+details summary { list-style-position: outside; }
+[hidden] { display: none !important; }
+
+/* Tablet */
+@media (max-width: 900px) {
+  h1 { font-size: 46px !important; }
+  h2 { font-size: 34px !important; }
+}
+
+/* Celular */
+@media (max-width: 600px) {
+  h1 { font-size: 36px !important; letter-spacing: -0.8px !important; }
+  h2 { font-size: 28px !important; }
+  section > div, section { padding-top: 64px !important; padding-bottom: 64px !important; }
+  #inicio > div, #home > div { padding-top: 48px !important; }
+  #contacto > div, #contact > div { padding: 32px 24px !important; }
+  form[data-wa-form] { padding: 24px !important; }
+  /* las tarjetas de 340-380px no deben desbordar en pantallas pequeñas */
+  [style*="minmax(340px"], [style*="minmax(380px"] { grid-template-columns: 1fr !important; }
+  #wa-panel { width: calc(100vw - 40px) !important; }
+}
