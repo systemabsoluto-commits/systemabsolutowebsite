@@ -21,7 +21,7 @@ y mantenimiento de computadoras y servidores para empresas.
 
 1. En el repositorio: **Settings → Pages**.
 2. En *Source* elige **Deploy from a branch**, rama `main`, carpeta `/ (root)`.
-3. Para usar el dominio propio, escribe `systemabsolutollc.com` en *Custom domain*
+3. Para usar el dominio propio, escribe `systemabsoluto.com` en *Custom domain*
    y apunta los DNS del dominio a GitHub Pages.
 
 ## Pendiente por completar
